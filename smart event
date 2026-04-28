@@ -1,0 +1,27 @@
+print("SMART EVENT & SPACE SCHEDULER")
+
+print("1. Seminar Hall")
+print("2. Conference Room")
+print("3. Auditorium")
+
+choice = int(input("Select a space: "))
+
+if choice == 1:
+    venue = "Seminar Hall"
+elif choice == 2:
+    venue = "Conference Room"
+elif choice == 3:
+    venue = "Auditorium"
+else:
+    venue = None
+
+if venue:
+    event = input("Enter Event Name: ")
+    date = input("Enter Event Date: ")
+
+    print("\nBooking Confirmed!")
+    print("Event:", event)
+    print("Date:", date)
+    print("Venue:", venue)
+else:
+    print("Invalid Selection")
